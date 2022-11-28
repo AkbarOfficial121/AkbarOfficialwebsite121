@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <title>Gallery Grid By Nam School Admin</title>
+</head>
+<body>
+ 
+    <!-- Ini Judul -->
+    <h1>My Gallery</h1>
+ 
+    <!-- Ini Gallery -->
+    <div class="gallery_container_parent">
+        <div class="gallery_container">
+            <figure class="gallery_item item_1" onclick="openmodal();currentslide(1)">
+                <img src="./images/sekolah.jpg" alt="Sekolah">
+                <figcaption class="caption">Sekolahku<br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+            </figure>
+     
+            <figure class="gallery_item item_2" onclick="openmodal();currentslide(2)">
+                <img src="./images/rpl.jpg" alt="phone_image">
+                <figcaption class="caption">Jurusan ku <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+            </figure>
+     
+            <figure class="gallery_item item_3" onclick="openmodal();currentslide(3)">
+                <img src="./images/nontonanime.jpg" alt="car_image">
+                <figcaption class="caption">Hobiku <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+            </figure>
+     
+            <figure class="gallery_item item_4" onclick="openmodal();currentslide(4)">
+                <img src="./images/kucing.jpg" alt="truck_image">
+                <figcaption class="caption">hewan peliharaan <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+            </figure>
+     
+            <figure class="gallery_item item_5" onclick="openmodal();currentslide(5)">
+                <img src="./images/Maul.jpg" alt="bike_image">
+                <figcaption class="caption">foto pribadi <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+            </figure>
+     
+            <figure class="gallery_item item_6" onclick="openmodal();currentslide(6)">
+                <img src="./images/Akbar.jpg" alt="phome_image">
+                <figcaption class="caption">Sunset <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+            </figure>
+     
+            <figure class="gallery_item item_7" onclick="openmodal();currentslide(7)">
+                <img src="./images/kelrpl.jpg" alt="truck_image">
+                <figcaption class="caption">Keluarga Rpl A <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+            </figure>
+        </div>
+    </div>
+     
+    <!-- Ini Lightbox  -->
+    <div class="lightbox_container">
+        <i class="fas fa-times" id="close"></i>
+        <div class="parent_navigation">
+            <span class="prev" id="ripple">&#10094;</span>
+            <span class="next" id="ripple">&#10095;</span>
+        </div>
+ 
+        <figure class="lightbox_item">
+            <img src="./images/sekolah.jpg" alt="bike_image">
+            <figcaption class="caption_lightbox">sekolah</figcaption>
+        </figure>
+ 
+        <figure class="lightbox_item">
+            <img src="./images/rpl.jpg" alt="phone_image">
+            <figcaption class="caption_lightbox">Jurusan</figcaption>
+        </figure>
+ 
+        <figure class="lightbox_item">
+            <img src="./images/nontonanime.jpg" alt="car_image">
+            <figcaption class="caption_lightbox">Hobi</figcaption>
+        </figure>
+ 
+        <figure class="lightbox_item">
+            <img src="./images/kucing.jpg" alt="truck_image">
+            <figcaption class="caption_lightbox">hewan peliharaan</figcaption>
+        </figure>
+ 
+        <figure class="lightbox_item">
+             <img src="./images/Maul.jpg" alt="bike_image">
+            <figcaption class="caption_lightbox">foto pribadi</figcaption>
+        </figure>
+ 
+        <figure class="lightbox_item">
+            <img src="./images/Akbar.jpg" alt="phome_image">
+            <figcaption class="caption_lightbox">Sun set</figcaption>
+        </figure>
+ 
+        <figure class="lightbox_item">
+            <img src="./images/kelrpl.jpg" alt="keluarga_rpl">
+            <figcaption class="caption_lightbox">Keluarga RPL A</figcaption>
+        </figure>
+    </div>
+ 
+    <!-- script javascript -->
+    <script src="gallery.js"></script>
+</body>
+</html>
